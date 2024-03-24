@@ -6,9 +6,9 @@ public class HelloUnity : MonoBehaviour
 {
     void Start()
     {
-        //두점 사이 구하기 
         float distance = GetDistance(2, 2, 5, 6);
-        Debug.Log("두점 사이의 거리는 " + distance);
+        Debug.Log("두점 사이의 거리:" + distance);
+        
 
         //캐릭터의 프로필을 변수로 만들기
         string name = "민아";
@@ -26,7 +26,7 @@ public class HelloUnity : MonoBehaviour
         Debug.Log("Hello Unity!");
     }
     
-    float GetDistance(float x1, float y1, float x2, float y2)
+    float GetDistance (float x1, float y1, float x2, float y2)
     {
         float width = x2 - x1;
         float height = y2 - y1;
@@ -36,9 +36,5 @@ public class HelloUnity : MonoBehaviour
 
         return distance;
     }
-
-    void Update()
-    {
-        
-    }
+  
 }
