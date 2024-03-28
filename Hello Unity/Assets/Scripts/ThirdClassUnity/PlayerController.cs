@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         float xInput = Input.GetAxis("Horizontal");
         float zInput = Input.GetAxis("Vertical");
 
@@ -23,9 +24,12 @@ public class PlayerController : MonoBehaviour
         float xSpeed = xInput * speed;
         float zSpeed = zInput * speed;
         //Vector3 속도를 (xSpeed,0,zSpeed) 로 생성
-        Vector3 newVelocity = new Vector3(xSpeed, 0, zSpeed);
-        playerRigidbody.velocity = newVelocity;
+        Vector3 playerVelocity = new Vector3(xSpeed, 0, zSpeed);
+        //리지드바디 속도에 playerRigidbody 할당
+        playerRigidbody.velocity = playerVelocity;
     }
+
+
 
     public void Die()
     {
