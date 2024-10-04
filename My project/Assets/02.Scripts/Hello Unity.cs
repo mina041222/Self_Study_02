@@ -17,8 +17,10 @@ public class HelloUnity : MonoBehaviour
 
         for (int i = 0; i < students.Length; i ++)
         {
-            Debug.Log(students[i] + " 점 입니다" );
+            Debug.Log(students[i] + " ?? ??????" );
         }
+
+
     }
     // Update is called once per frame
     void Update()
